@@ -36,7 +36,6 @@ public class ScoreController : MonoBehaviour
     public void GoalPlayerOne()
     {
         this.scorePlayerOne++;
-        ballMovement.hitCounter = 0;
     }
     public void GoalPlayerTwo()
     {

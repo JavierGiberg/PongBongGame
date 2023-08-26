@@ -51,7 +51,7 @@ public class CollisionController : MonoBehaviour
         {
             Debug.Log("Coll W right");
             this.scoreController.GoalPlayerOne();
-            StartCoroutine(this.ballMovement.StarBall(false));
+            StartCoroutine(this.ballMovement.StarBall(true));
         }
     }
 }

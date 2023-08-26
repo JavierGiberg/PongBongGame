@@ -30,7 +30,7 @@ public class BallMovement : MonoBehaviour
 
     public IEnumerator StarBall(bool isStartingPlayerOne = true)
     {
-        Debug.Log("StarBall was call");
+        Debug.Log("StarBall was call.");
         this.PositionBall(isStartingPlayerOne);
         this.hitCounter = 0;
         yield return new WaitForSeconds(2);
