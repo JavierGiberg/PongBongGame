@@ -1,11 +1,18 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Runtime.CompilerServices;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class CollisionController : MonoBehaviour
 {
     public BallMovement ballMovement;
     public ScoreController scoreController;
+
+    [SerializeField]
+    private InputActionReference movement;
+    
+
 
     void BounceFromRacket(Collision2D c)
     {
@@ -13,6 +20,8 @@ public class CollisionController : MonoBehaviour
         Vector3 racketPosition = c.gameObject.transform.position;
 
         float racketHight = c.collider.bounds.size.y;
+
+        
 
         float x;
         if (c.gameObject.name == "RacketPlayerOne")
