@@ -432,7 +432,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6012cadb7d771ed44b098f213fae8a49, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  scoreController: {fileID: 1538733519}
   movementSpeed: 200
+  bigYScale: 200
 --- !u!50 &226037249
 Rigidbody2D:
   serializedVersion: 4
@@ -1289,7 +1291,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: de0c33c84188e014794f8b125cb9c8e7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  scoreController: {fileID: 1538733519}
   movementSpeed: 200
+  bigYScale: 200
 --- !u!114 &474999554
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2124,9 +2128,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ballMovement: {fileID: 0}
+  scorePlayerOne: 0
+  scorePlayerTwo: 0
   scoreTextPlayerOne: {fileID: 1581572445}
   scoreTextPlayerTwo: {fileID: 1128542623}
-  goalToWin: 2
+  goalToWin: 5
 --- !u!1 &1581572445
 GameObject:
   m_ObjectHideFlags: 0
